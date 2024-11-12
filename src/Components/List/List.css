@@ -1,0 +1,124 @@
+.custom-list-container {
+    width: 360px;
+    margin-left: 2.5rem;
+}
+
+.custom-list-container:last-child {
+    margin-right: 2.5rem;
+}
+
+.custom-list-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.custom-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+}
+
+.custom-list-header-left, .custom-list-header-right {
+    display: flex;
+    align-items: center;
+}
+
+.custom-list-header:hover {
+    background-color: #f4f4f4;
+}
+
+.custom-list-icon {
+    margin-right: .5rem;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.custom-list-icon:hover {
+    transform: scale(1.1);
+}
+
+.custom-list-title {
+    margin-right: .65rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.custom-list-add-item {
+    margin-right: .5rem;
+    cursor: pointer;
+    color: var(--textgrey);
+    font-size: 1.2rem;
+    transition: color 0.2s ease;
+}
+
+.custom-list-add-item:hover {
+    color: #007bff;
+}
+
+.custom-list-option-item {
+    margin-right: .5rem;
+    cursor: pointer;
+    color: var(--textgrey);
+    font-size: 1.2rem;
+    transition: color 0.2s ease;
+}
+
+.custom-list-option-item:hover {
+    color: #007bff;
+}
+
+.custom-list-card-items {
+    width: 100%;
+    padding: 1rem;
+}
+
+@media (max-width: 500px) and (min-width: 300px) {
+    .custom-list-container {
+        width: 320px;
+        margin-left: 1.5rem;
+        border-radius: 6px;
+    }
+
+    .custom-list-container:last-child {
+        margin-right: 1.5rem;
+    }
+
+    .custom-list-header {
+        padding: 1.2rem 1rem;
+    }
+
+    .custom-list-title {
+        font-size: 1rem;
+    }
+
+    .custom-list-add-item, .custom-list-option-item {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-list-container {
+        width: 100%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .custom-list-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .custom-list-header-left {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .custom-list-title {
+        font-size: 1.2rem;
+    }
+}
